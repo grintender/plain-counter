@@ -15,8 +15,8 @@ All things count. Projects done and coffee consumed.
 
 To install "Plain Counter" do the following steps:
 
-1. Download the plugin from Envato
-2. Upload the ZIP file through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
+1. Download ZIP file from the root of Github repository
+2. Upload it through the 'Plugins > Add New > Upload' screen in your WordPress dashboard
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Navigate to Settings > Plain Counter Settings and follow your inner voice along with our tips
 
