@@ -1,0 +1,153 @@
+@import url("frontend.css");
+
+/*
+**  header + preview
+*/
+
+.preview-container {padding:20px 20px 0px 0px;}
+
+.branded-header-container {
+
+  border: 5px dashed lightgrey;
+  letter-spacing:1px;
+  color:grey;
+}
+
+.branded-header-container .item2 {
+ 
+  display:inline-block;
+  max-width:25%;
+  vertical-align: top;
+  padding:10px;
+  min-width: 300px;
+}
+
+.branded-header-container ul {margin:0px !important;}
+
+#mc_embed_signup label {
+  font-weight:bold;
+  letter-spacing:1px;
+  text-align:justify;  
+}
+
+#mc_embed_signup input {
+  font-weight:bold;
+  text-align:center;
+  margin:10px 0;
+  background:none; 
+}
+
+#mc_embed_signup {
+  border-left: 5px solid lightgrey;
+  border-right: 5px solid lightgrey; 
+  padding: 0px 20px;
+}
+
+#mc_embed_signup, #mc-embedded-subscribe, #mce-EMAIL {
+  width:240px;
+}
+
+/*
+** settings styling 
+*/
+
+td {
+  max-width:1000px;
+}
+
+.style-section .form-table tr:nth-child(1) {
+  border-top: 3px dashed #BDBDBD;
+}
+
+.style-section .form-table tr:nth-child(2),
+.style-section .form-table tr:nth-child(6),
+.style-section .form-table tr:nth-child(9)
+{
+  border-bottom: 3px dashed #BDBDBD;
+}
+
+.section-name {
+	position:absolute;
+	right:20px;
+	font-size:50px;
+	font-weight: bold;
+	color: lightgrey;
+}
+
+.style-section  .form-table tr:nth-child(1) label > input{ 
+  visibility: hidden; 
+  position: absolute; 
+}
+
+.style-section label > input + img{ 
+  cursor:pointer;
+  border:2px solid transparent;
+  display: inline-block;
+  margin: 6px;
+}
+
+.style-section label > input:checked + img{
+  border:4px solid #263238;
+}
+
+.theme-red {
+	content:url("../img/theme-red.png");
+}
+.theme-pink {
+	content:url("../img/theme-pink.png");
+}
+.theme-purple {
+	content:url("../img/theme-purple.png");
+}
+.theme-indigo {
+	content:url("../img/theme-indigo.png");
+}
+.theme-blue {
+	content:url("../img/theme-blue.png");
+}
+.theme-light-blue {
+	content:url("../img/theme-light-blue.png");
+}
+.theme-cyan {
+	content:url("../img/theme-cyan.png");
+}
+.theme-teal {
+	content:url("../img/theme-teal.png");
+}
+.theme-green {
+	content:url("../img/theme-green.png");
+}
+.theme-light-green {
+	content:url("../img/theme-light-green.png");
+}
+.theme-lime {
+	content:url("../img/theme-lime.png");
+}
+.theme-yellow {
+	content:url("../img/theme-yellow.png");
+}
+.theme-amber {
+	content:url("../img/theme-amber.png");
+}
+.theme-orange {
+	content:url("../img/theme-orange.png");
+}
+.theme-deep-orange {
+	content:url("../img/theme-deep-orange.png");
+}
+.theme-brown {
+	content:url("../img/theme-brown.png");
+}
+.theme-grey {
+	content:url("../img/theme-grey.png");
+}
+.theme-blue-grey {
+	content:url("../img/theme-blue-grey.png");
+}
+
+
+/*
+** go live tab
+*/
+
+.live-section .submit {display:none;}

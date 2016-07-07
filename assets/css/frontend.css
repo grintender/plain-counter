@@ -1,0 +1,744 @@
+/*
+** plugin css layout 
+*/
+
+.fullWidth {
+  width: 100% !important;
+  display: table;
+  float: none;
+  padding: 0;
+  min-height: 1px;
+  position: relative;
+  color: #ECEFF1;
+}
+
+.divider-display {
+  background: #ECEFF1;
+}
+
+.cellsWrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cellsWrap .item{
+  height: 100%;
+  padding: 50px 35px;
+  text-align: center;
+  
+}
+
+
+.cellsWrap .item .number{
+  font-size: 40px;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cellsWrap .item p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans';
+}
+
+/*
+** elements
+*/
+
+.divider-display {
+  width: 60px;
+  height: 2px;
+  display: block;
+  margin: 10px auto;
+}
+
+.icon-display{
+  vertical-align: middle;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 786px){
+  .projectFactsWrap .item {
+     flex: 0 0 50%;
+  }
+}
+@media (max-width: 1000px){
+  .mobile-aint-show {
+     display:none;
+  }
+}
+
+.fa {margin-bottom: 10px;} 
+
+.aint-show {
+    display: none !important;
+}
+
+.outer-border {
+    border: solid red;
+}
+
+
+/*
+** built-in cell THEMES
+*/
+
+/* grey-blue - default */
+
+.blue-grey .item:nth-child(1) {
+  background: #263238;
+}
+
+.blue-grey .item:nth-child(2) {
+  background: #37474F;
+}
+
+.blue-grey .item:nth-child(3){
+  background: #455A64;
+}
+
+.blue-grey .item:nth-child(4){
+  background: #546E7A;
+}
+
+.blue-grey .item:nth-child(5){
+  background: #607D8B;
+}
+
+.blue-grey .item:nth-child(6){
+  background: #78909C;
+}
+.blue-grey .item:nth-child(7){
+  background: #90A4AE;
+}
+.blue-grey .item:nth-child(8){
+  background: #B0BEC5;
+}
+
+/* red */
+
+.red .item:nth-child(1){
+  background: #B71C1C;
+}
+
+.red .item:nth-child(2){
+  background: #C62828;
+}
+
+.red .item:nth-child(3){
+  background: #D32F2F;
+}
+
+.red .item:nth-child(4){
+  background: #E53935;
+}
+
+.red .item:nth-child(5){
+  background: #F44336;
+}
+
+.red .item:nth-child(6){
+  background: #EF5350;
+}
+.red .item:nth-child(7){
+  background: #E57373;
+}
+.red .item:nth-child(8){
+  background: #EF9A9A;
+}
+
+/* pink */
+
+.pink .item:nth-child(1){
+  background: #880E4F;
+}
+
+.pink .item:nth-child(2){
+  background: #AD1457;
+}
+
+.pink .item:nth-child(3){
+  background: #C2185B;
+}
+
+.pink .item:nth-child(4){
+  background: #D81B60;
+}
+
+.pink .item:nth-child(5){
+  background: #E91E63;
+}
+
+.pink .item:nth-child(6){
+  background: #EC407A;
+}
+
+.pink .item:nth-child(7){
+  background: #F06292;
+}
+
+.pink .item:nth-child(8){
+  background: #F48FB1;
+}
+
+/* purple */
+
+.purple .item:nth-child(1){
+  background: #4A148C;
+}
+
+.purple .item:nth-child(2){
+  background: #6A1B9A;
+}
+
+.purple .item:nth-child(3){
+  background: #7B1FA2;
+}
+
+.purple .item:nth-child(4){
+  background: #8E24AA;
+}
+
+.purple .item:nth-child(5){
+  background: #9C27B0;
+}
+
+.purple .item:nth-child(6){
+  background: #AB47BC;
+}
+
+.purple .item:nth-child(7){
+  background: #BA68C8;
+}
+
+.purple .item:nth-child(8){
+  background: #CE93D8;
+}
+
+/* deep-purple */
+
+.deep-purple .item:nth-child(1){
+  background: #311B92;
+}
+
+.deep-purple .item:nth-child(2){
+  background: #4527A0;
+}
+
+.deep-purple .item:nth-child(3){
+  background: #512DA8;
+}
+
+.deep-purple .item:nth-child(4){
+  background: #5E35B1;
+}
+
+.deep-purple .item:nth-child(5){
+  background: #673AB7;
+}
+
+.deep-purple .item:nth-child(6){
+  background: #7E57C2;
+}
+
+.deep-purple .item:nth-child(7){
+  background: #9575CD;
+}
+
+.deep-purple .item:nth-child(8){
+  background: #B39DDB;
+}
+
+/* indigo */
+
+.indigo .item:nth-child(1){
+  background: #1A237E;
+}
+
+.indigo .item:nth-child(2){
+  background: #283593;
+}
+
+.indigo .item:nth-child(3){
+  background: #303F9F;
+}
+
+.indigo .item:nth-child(4){
+  background: #3949AB;
+}
+
+.indigo .item:nth-child(5){
+  background: #3F51B5;
+}
+
+.indigo .item:nth-child(6){
+  background: #5C6BC0;
+}
+
+.indigo .item:nth-child(7){
+  background: #7986CB;
+}
+
+.indigo .item:nth-child(8){
+  background: #9FA8DA;
+}
+
+/* blue */
+
+.blue .item:nth-child(1){
+  background: #0D47A1;
+}
+
+.blue .item:nth-child(2){
+  background: #1565C0;
+}
+
+.blue .item:nth-child(3){
+  background: #1976D2;
+}
+
+.blue .item:nth-child(4){
+  background: #1E88E5;
+}
+
+.blue .item:nth-child(5){
+  background: #2196F3;
+}
+
+.blue .item:nth-child(6){
+  background: #42A5F5;
+}
+
+.blue .item:nth-child(7){
+  background: #64B5F6;
+}
+
+.blue .item:nth-child(8){
+  background: #90CAF9;
+}
+
+/* light-blue */
+
+.light-blue .item:nth-child(1){
+  background: #01579B;
+}
+
+.light-blue .item:nth-child(2){
+  background: #0277BD;
+}
+
+.light-blue .item:nth-child(3){
+  background: #0288D1;
+}
+
+.light-blue .item:nth-child(4){
+  background: #039BE5;
+}
+
+.light-blue .item:nth-child(5){
+  background: #03A9F4;
+}
+
+.light-blue .item:nth-child(6){
+  background: #29B6F6;
+}
+
+.light-blue .item:nth-child(7){
+  background: #4FC3F7;
+}
+
+.light-blue .item:nth-child(8){
+  background: #81D4FA;
+}
+
+/* cyan */
+
+.cyan .item:nth-child(1){
+  background: #006064;
+}
+
+.cyan .item:nth-child(2){
+  background: #00838F;
+}
+
+.cyan .item:nth-child(3){
+  background: #0097A7;
+}
+
+.cyan .item:nth-child(4){
+  background: #00ACC1;
+}
+
+.cyan .item:nth-child(5){
+  background: #00BCD4;
+}
+
+.cyan .item:nth-child(6){
+  background: #26C6DA;
+}
+
+.cyan .item:nth-child(7){
+  background: #4DD0E1;
+}
+
+.cyan .item:nth-child(8){
+  background: #80DEEA;
+}
+
+/* teal */
+
+.teal .item:nth-child(1){
+  background: #004D40;
+}
+
+.teal .item:nth-child(2){
+  background: #00695C;
+}
+
+.teal .item:nth-child(3){
+  background: #00796B;
+}
+
+.teal .item:nth-child(4){
+  background: #00897B;
+}
+
+.teal .item:nth-child(5){
+  background: #009688;
+}
+
+.teal .item:nth-child(6){
+  background: #26A69A;
+}
+
+.teal .item:nth-child(7){
+  background: #4DB6AC;
+}
+
+.teal .item:nth-child(8){
+  background: #80CBC4;
+}
+
+/* green */
+
+.green .item:nth-child(1){
+  background: #1B5E20;
+}
+
+.green .item:nth-child(2){
+  background: #2E7D32;
+}
+
+.green .item:nth-child(3){
+  background: #388E3C;
+}
+
+.green .item:nth-child(4){
+  background: #43A047;
+}
+
+.green .item:nth-child(5){
+  background: #4CAF50;
+}
+
+.green .item:nth-child(6){
+  background: #66BB6A;
+}
+
+.green .item:nth-child(7){
+  background: #81C784;
+}
+
+.green .item:nth-child(8){
+  background: #A5D6A7;
+}
+
+/* light-green */
+
+.light-green .item:nth-child(1){
+  background: #33691E;
+}
+
+.light-green .item:nth-child(2){
+  background: #558B2F;
+}
+
+.light-green .item:nth-child(3){
+  background: #689F38;
+}
+
+.light-green .item:nth-child(4){
+  background: #7CB342;
+}
+
+.light-green .item:nth-child(5){
+  background: #8BC34A;
+}
+
+.light-green .item:nth-child(6){
+  background: #9CCC65;
+}
+
+.light-green .item:nth-child(7){
+  background: #AED581;
+}
+
+.light-green .item:nth-child(8){
+  background: #C5E1A5;
+}
+
+/* lime */
+
+.lime .item:nth-child(1){
+  background: #827717;
+}
+
+.lime .item:nth-child(2){
+  background: #9E9D24;
+}
+
+.lime .item:nth-child(3){
+  background: #AFB42B;
+}
+
+.lime .item:nth-child(4){
+  background: #C0CA33;
+}
+
+.lime .item:nth-child(5){
+  background: #CDDC39;
+}
+
+.lime .item:nth-child(6){
+  background: #D4E157;
+}
+
+.lime .item:nth-child(7){
+  background: #DCE775;
+}
+
+.lime .item:nth-child(8){
+  background: #E6EE9C;
+}
+
+/* yellow */
+
+.yellow .item:nth-child(1){
+  background: #F57F17;
+}
+
+.yellow .item:nth-child(2){
+  background: #F9A825;
+}
+
+.yellow .item:nth-child(3){
+  background: #FBC02D;
+}
+
+.yellow .item:nth-child(4){
+  background: #FDD835;
+}
+
+.yellow .item:nth-child(5){
+  background: #FFEB3B;
+}
+
+.yellow .item:nth-child(6){
+  background: #FFEE58;
+}
+
+.yellow .item:nth-child(7){
+  background: #FFF176;
+}
+
+.yellow .item:nth-child(8){
+  background: #FFF59D;
+}
+
+/* amber */
+
+.amber .item:nth-child(1){
+  background: #FF6F00;
+}
+
+.amber .item:nth-child(2){
+  background: #FF8F00;
+}
+
+.amber .item:nth-child(3){
+  background: #FFA000;
+}
+
+.amber .item:nth-child(4){
+  background: #FFB300;
+}
+
+.amber .item:nth-child(5){
+  background: #FFC107;
+}
+
+.amber .item:nth-child(6){
+  background: #FFCA28;
+}
+
+.amber .item:nth-child(7){
+  background: #FFD54F;
+}
+
+.amber .item:nth-child(8){
+  background: #FFE082;
+}
+
+/* orange */
+
+.orange .item:nth-child(1){
+  background: #E65100;
+}
+
+.orange .item:nth-child(2){
+  background: #EF6C00;
+}
+
+.orange .item:nth-child(3){
+  background: #F57C00;
+}
+
+.orange .item:nth-child(4){
+  background: #FB8C00;
+}
+
+.orange .item:nth-child(5){
+  background: #FF9800;
+}
+
+.orange .item:nth-child(6){
+  background: #FFA726;
+}
+
+.orange .item:nth-child(7){
+  background: #FFB74D;
+}
+
+.orange .item:nth-child(8){
+  background: #FFCC80;
+}
+
+/* deep-orange */
+
+.deep-orange .item:nth-child(1){
+  background: #BF360C;
+}
+
+.deep-orange .item:nth-child(2){
+  background: #D84315;
+}
+
+.deep-orange .item:nth-child(3){
+  background: #E64A19;
+}
+
+.deep-orange .item:nth-child(4){
+  background: #F4511E;
+}
+
+.deep-orange .item:nth-child(5){
+  background: #FF5722;
+}
+
+.deep-orange .item:nth-child(6){
+  background: #FF7043;
+}
+
+.deep-orange .item:nth-child(7){
+  background: #FF8A65;
+}
+
+.deep-orange .item:nth-child(8){
+  background: #FFAB91;
+}
+
+/* brown */
+
+.brown .item:nth-child(1){
+  background: #3E2723;
+}
+
+.brown .item:nth-child(2){
+  background: #4E342E;
+}
+
+.brown .item:nth-child(3){
+  background: #5D4037;
+}
+
+.brown .item:nth-child(4){
+  background: #6D4C41;
+}
+
+.brown .item:nth-child(5){
+  background: #795548;
+}
+
+.brown .item:nth-child(6){
+  background: #8D6E63;
+}
+
+.brown .item:nth-child(7){
+  background: #A1887F;
+}
+
+.brown .item:nth-child(8){
+  background: #BCAAA4;
+}
+
+/* grey */
+
+.grey .item:nth-child(1){
+  background: #323131;
+}
+
+.grey .item:nth-child(2){
+  background: #424242;
+}
+
+.grey .item:nth-child(3){
+  background: #616161;
+}
+
+.grey .item:nth-child(4){
+  background: #757575;
+}
+
+.grey .item:nth-child(5){
+  background: #9E9E9E;
+}
+
+.grey .item:nth-child(6){
+  background: #BDBDBD;
+}
+
+.grey .item:nth-child(7){
+  background: #E0E0E0;
+}
+
+.grey .item:nth-child(8){
+  background: #EEEEEE;
+}
+
+
+
+
+
+
+
+
+
